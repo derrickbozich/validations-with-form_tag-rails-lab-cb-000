@@ -26,6 +26,12 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @post.update(post_params)
 
+    if @post.valid?
+      
+    else
+      
+    end
+
     
 
     redirect_to post_path(@post)
