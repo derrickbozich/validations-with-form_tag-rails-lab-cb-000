@@ -22,7 +22,13 @@ class AuthorsController < ApplicationController
   end
 
   def update
-    @author.update(author_params)
+    @author = Author.find_by_id(params[:id])
+    if @author
+      @author.update(author_params)
+    else
+      
+    end
+    
   end
 
   private
