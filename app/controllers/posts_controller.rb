@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     @post = Post.create(post_params)
 
     if @post.valid?
-      redirect_to posts_path
+      redirect_to post_path(@post)
     else
       render :new
     end
