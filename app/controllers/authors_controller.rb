@@ -15,7 +15,9 @@ class AuthorsController < ApplicationController
     else
       render :new
     end
+  end
 
+  def update
     
   end
 
