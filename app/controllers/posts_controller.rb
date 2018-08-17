@@ -7,6 +7,11 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+  def create
+    @post.create(post_params)
+    redirect_to post_path(@post)
+  end
+
   def edit
     @post = Post.find(params[:id])
   end
