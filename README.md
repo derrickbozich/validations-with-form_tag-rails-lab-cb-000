@@ -21,6 +21,9 @@
   1. `content` is at least 100 characters long
   1. `category` is either `"Fiction"` or `"Non-Fiction"`
 
+  rails g resource Author name:string email:string phone_number:integer — no-test-framework
+  rails g resource Post title:string content:text category:string — no-test-framework
+
 ## Basic Routes & Controllers
 
 1. Create controllers for both models.
