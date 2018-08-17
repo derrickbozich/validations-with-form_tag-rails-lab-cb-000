@@ -26,7 +26,7 @@ class AuthorsController < ApplicationController
     if @author
       @author.update(author_params)
     else
-      
+      render :edit
     end
     
   end
